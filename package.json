@@ -5,8 +5,9 @@
   "type": "module",
   "main": "src/main.js",
   "scripts": {
-    "start": "node .",
-    "dev": "nodemon ."
+    "lint": "npx eslint src/**",
+    "start": "npm run lint && node .",
+    "dev": "npm run lint && nodemon ."
   },
   "keywords": [],
   "author": "",
@@ -18,6 +19,9 @@
     "mongoose": "^8.5.0"
   },
   "devDependencies": {
+    "@eslint/js": "^9.7.0",
+    "eslint": "^9.7.0",
+    "globals": "^15.8.0",
     "nodemon": "^3.1.4"
   }
 }

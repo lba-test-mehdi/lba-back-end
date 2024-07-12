@@ -1,5 +1,4 @@
 import {connect} from "mongoose";
-import {env} from "node:process";
 import {getValue} from "./env.js";
 
 export const linkDatabase = async () => {
