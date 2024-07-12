@@ -1,4 +1,3 @@
-import {env} from "node:process";
 import {json, urlencoded} from "express";
 import {getValue} from "./env.js";
 
@@ -7,6 +6,7 @@ const API_PORT = getValue("API_PORT", 5000);
 /**
  * Start the server
  * @param {Express} app
+ * @param {Router[]} routers
  */
 export const startServer = async (app, routers = []) => {
 

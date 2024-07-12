@@ -1,5 +1,4 @@
-import {checkRequestKey} from "../utils/requestUtils.js";
-import {getAllProducts, getProductByName} from "../models/Product.js";
+import {getAllProducts} from "../models/Product.js";
 
 export default async (req, res) => {
 
