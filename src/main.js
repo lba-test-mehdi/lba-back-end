@@ -1,6 +1,6 @@
 import express, {Router} from "express";
 import {manageRoutes} from "./routes/route.js";
-import {linkDatabase} from "./config/database.js";
+import {linkDatabase, manageDatabase} from "./config/database.js";
 import {startServer} from "./config/express.js";
 
 
@@ -9,7 +9,8 @@ import {startServer} from "./config/express.js";
     const router = Router();
 
     await manageRoutes(router);
-    await linkDatabase()
+     await linkDatabase()
+    await manageDatabase();
 
     await startServer(app, [router]);
 })();

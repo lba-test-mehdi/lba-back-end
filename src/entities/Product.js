@@ -1,9 +1,5 @@
 import {model, Schema} from "mongoose";
 
-
-// TODO auto-increment id
-// TODO : Re-set _id (to data_to_import.json)
-
 const ProductSchema = new Schema({
     name: {
         type: String,
